@@ -15,6 +15,12 @@ export interface IStateMachineConfig {
 	},
 }
 
+declare interface ILifecycle {
+	transition: string,
+	from: string
+	to: string,
+}
+
 declare interface ITransitionsConfig {
 	name: string,
 	from: string | string[],
